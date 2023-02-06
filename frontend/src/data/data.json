@@ -1,0 +1,346 @@
+{
+  "scenarioCards": [
+    {
+      "id": "sc001",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Initialisation",
+      "text": "Grâce au réducteur-reducer, vous êtes numérisé et injecté dans le code vérolé à sauver. Vous atterrissez sur la landing page mais une immense code-erreur terrifiante se dresse devant vous et vous menace. No need to panick ! Juste to react…",
+      "choices": [
+        {
+          "id": "ch001",
+          "type": "scenarioCard",
+          "text": "Vous clonez le code",
+          "goTo": "sc002"
+        },
+        {
+          "id": "ch002",
+          "type": "eventCard",
+          "text": "Vous lui envoyez ctrl+alt+suppr dans son immense gueule dentée",
+          "goTo": "ec001"
+        }
+      ]
+    },
+    {
+      "id": "sc002",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Code Source",
+      "text": "Vous venez de dupliquer le code sur votre machine. Beau réflexe. Vous pouvez maintenant arpenter tranquillement le code-source",
+      "choices": [
+        {
+          "id": "ch003",
+          "type": "scenarioCard",
+          "text": "Vous allez dans app.jsx",
+          "goTo": "sc003"
+        },
+        {
+          "id": "ch004",
+          "type": "scenarioCard",
+          "text": "Vous allez dans style.css",
+          "goTo": "sc004"
+        },
+        {
+          "id": "ch005",
+          "type": "scenarioCard",
+          "text": "Vous vous empressez d’aller voir express",
+          "goTo": "sc005"
+        }
+      ]
+    },
+    {
+      "id": "sc003",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Jurassic Park",
+      "text": "Vous atterrissez devant un T-Regex pas possible qui vous emprisonne telle une mélasse javascriptée. Faites vite !",
+      "choices": [
+        {
+          "id": "ch006",
+          "type": "eventCard",
+          "text": "Vous lui faites une accolade et lui transmettez plein d’amour",
+          "goTo": "ec006"
+        },
+        {
+          "id": "ch007",
+          "type": "popUp",
+          "text": "Vous lui offrez un string",
+          "popUpText": "Même si le charabia est touché par l’attention, cela ne suffit pas, il faut essayer autre chose."
+        },
+        {
+          "id": "ch008",
+          "type": "eventCard",
+          "text": "Vous lui bottez l’array",
+          "goTo": "ec002"
+        }
+      ]
+    },
+    {
+      "id": "sc004",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "The Thing",
+      "text": "Une monstrueuse variable borderline sans style de niveau 3 vous saute dessus.",
+      "choices": [
+        {
+          "id": "ch009",
+          "type": "eventCard",
+          "text": "Vous lui mettez 2 points dans la tronche",
+          "goTo": "ec003"
+        },
+        {
+          "id": "ch010",
+          "type": "eventCard",
+          "text": "Vous tirez tirez",
+          "goTo": "ec009"
+        }
+      ]
+    },
+    {
+      "id": "sc005",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Go fast",
+      "text": "Vous avez pris la voie express ! Ici des dealeurs gèrent un important traffic de code.",
+      "choices": [
+        {
+          "id": "ch011",
+          "type": "eventCard",
+          "text": "Vous leur collez votre plus beau end-poingt dans les API",
+          "goTo": "ec004"
+        },
+        {
+          "id": "ch012",
+          "type": "eventCard",
+          "text": "Vous changez de route",
+          "goTo": "ec005"
+        }
+      ]
+    },
+    {
+      "id": "sc006",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "09/11/1989",
+      "text": "Devant vous il y a un tableau dont les 2 personnages animés se boudent violemment l’un l’autre. Vous discutez avec eux et apprenez qu’ils s’appellent Xavier et Lisa. Quelque chose jette un froid entre eux…",
+      "choices": [
+        {
+          "id": "ch013",
+          "type": "eventCard",
+          "text": "Vous leur demandez de se faire un câlin",
+          "goTo": "ec010"
+        },
+        {
+          "id": "ch014",
+          "type": "eventCard",
+          "text": "Vous divisez le tableau en 2",
+          "goTo": "ec007"
+        }
+      ]
+    },
+    {
+      "id": "sc007",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Timbré",
+      "text": "Vous tombez sur un facteur en panne de véhicule qui vous demande de l’aide.",
+      "choices": [
+        {
+          "id": "ch015",
+          "type": "eventCard",
+          "text": "Vous acceptez le POST à sa place",
+          "goTo": "ec013"
+        },
+        {
+          "id": "ch016",
+          "type": "eventCard",
+          "text": "Vous lui répondez un truc du genre « Vous fetchiez j’ai des choses plus graves à régler »",
+          "goTo": "ec008"
+        }
+      ]
+    },
+    {
+      "id": "sc008",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Peter Pan",
+      "text": "Vous tombez sur un capitaine hook en pleine forme ! Rempli de joie, il vous crie à la figure qu’il veut partir visiter les states et faire le tour du pays ! Puis d’un seul coup il déprime, usé jusqu’à la moelle. Eh non ! À nouveau euphorique ! Puis re déprimé… Il faut que ces sautes d’humeur permanentes cessent !",
+      "choices": [
+        {
+          "id": "ch017",
+          "type": "eventCard",
+          "text": "Vous l’initiez au yoga",
+          "goTo": "ec012"
+        },
+        {
+          "id": "ch018",
+          "type": "eventCard",
+          "text": "Vous lui mettez une grande tarte dans sa gueule et lui demandez un peu de SILENCE !",
+          "goTo": "ec011"
+        }
+      ]
+    },
+    {
+      "id": "sc011",
+      "imageSource": "src/assets/scene_LaboFigma.png",
+      "title": "Get Git or Die",
+      "text": "Pour déployer votre code :",
+      "choices": [
+        {
+          "id": "ch019",
+          "type": "popUp",
+          "text": "Push",
+          "popUpText": "Tu ne respectes pas le workflow de la Git Push Force",
+          "goTo": "ec015"
+        },
+        {
+          "id": "ch020",
+          "type": "popUp",
+          "text": "Pull",
+          "popUpText": "Excellent ! Vous avez récupéré le travail accompli en parallèle de votre mission par vos vaillant.e.s collègues de la git push force ! Vous êtes désormais serein pour la suite de vos actions."
+        },
+        {
+          "id": "ch021",
+          "type": "popUp",
+          "text": "Fetch",
+          "popUpText": "Bien vu ! Il faut savoir où en sont les avancées de vos collègues de la Git Push Force dans les combats sur le terrain principal !"
+        },
+        {
+          "id": "ch022",
+          "type": "popUp",
+          "text": "Merge",
+          "popUpText": "Excellent ! Vous avez pris en compte les progrès de vos vaillant.e.s collègues et les avez intégrés à votre travail à vous."
+        }
+      ]
+    }
+  ],
+  "eventCards": [
+    {
+      "id": "ec001",
+      "type": "game over",
+      "from": "1-2",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Ça la chatouille et dans son geste elle vous broie. Vous êtes supprimé. L’appli est crashée. GAME OVER",
+      "buttonText": "Retour page d’accueil",
+      "goTo": "Home"
+    },
+    {
+      "id": "ec002",
+      "type": "turn back",
+      "from": "3-3",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Votre pied s’enfonce encore plus dans la mélasse et vous vous étalez de tout votre long ! Retour case départ",
+      "buttonText": "Retour au code source",
+      "goTo": "sc002"
+    },
+    {
+      "id": "ec003",
+      "type": "turn back",
+      "from": "4-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Ça n’a aucun effet sur elle, elle vous bloque le passage et vous êtes obligé de rebrousser chemin.",
+      "buttonText": "Retour au code source",
+      "goTo": "sc002"
+    },
+    {
+      "id": "ec004",
+      "type": "game over",
+      "from": "5-1",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Ils url de colère et vous ra-get toutes vos possessions. Dépouillé.e, vous ne pouvez plus rien faire et votre mission s’arrête ici. L’appli est crashée. GAME OVER",
+      "buttonText": "Retour page d’accueil",
+      "goTo": "Home"
+    },
+    {
+      "id": "ec005",
+      "type": "transition",
+      "from": "5-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Judicieuse décision, leur traffic est stable et vous ne voulez pas les déranger.",
+      "buttonText": "Suite",
+      "goTo": "sc007"
+    },
+    {
+      "id": "ec006",
+      "type": "transition",
+      "from": "3-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Le charabia y est sensible ! Fini le combat, vous vous étreignez et allez à la ligne suivante",
+      "buttonText": "Suite",
+      "goTo": "sc006"
+    },
+    {
+      "id": "ec007",
+      "type": "turn back",
+      "from": "6-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Quelle erreur ! Vous venez de séparer 2 amoureux secrets ! Tout le code s’écroule et il va falloir tout refaire… Retour case départ.",
+      "buttonText": "Retour au code source",
+      "goTo": "sc002"
+    },
+    {
+      "id": "ec008",
+      "type": "game over",
+      "from": "7-2",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Quelle grossièreté ! Votre mauvaise humeur ne vous amènera nulle part. Vous êtes exclu.e de la mission. GAME OVER",
+      "buttonText": "Retour page d’accueil",
+      "goTo": "Home"
+    },
+    {
+      "id": "ec009",
+      "type": "transition",
+      "from": "4-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bravo ! La variable est domptée et prête à être votre alliée. Poursuivez votre aventure.",
+      "buttonText": "Suite",
+      "goTo": "ec013"
+    },
+    {
+      "id": "ec010",
+      "type": "transition",
+      "from": "6-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Vous avez tout compris ! Vous avez eu l’oeil en voyant gravé en bas du tableau « XML » : car oui ! X aime L, Xavier est amoureux de Lisa et il s’avère qu’elle aussi mais ces 2 nigauds ne se parlent pas. Rien qu’un gros câlin ne puisse régler.",
+      "buttonText": "Suite",
+      "goTo": "sc008"
+    },
+    {
+      "id": "ec011",
+      "type": "turn back",
+      "from": "8-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Hook vous arrête et vous crash à la figure. Tout le code s’écroule et vous êtes obligé de repartir du début",
+      "buttonText": "Retour au code source",
+      "goTo": "sc002"
+    },
+    {
+      "id": "ec012",
+      "type": "transition",
+      "from": "8-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bravo ! Hook se calme et se met à l’écoute de son état intérieur. Stabilisé, il vous guide vers la suite.",
+      "buttonText": "Suite",
+      "goTo": "ec013"
+    },
+    {
+      "id": "ec013",
+      "type": "transition",
+      "from": "10-1",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bravo ! Vous avez stabilisé le code ! Il ne vous reste plus qu’à le déployer à la place de l’autre, toujours bloqué par la dévastatrice code-erreur.",
+      "buttonText": "Suite",
+      "goTo": "sc011"
+    },
+    {
+      "id": "ec014",
+      "type": "transition",
+      "from": "10-2",
+      "imageSource": "../assets/scene_LaboFigma.png",
+      "text": "Bien joué, vous avez trouvé comment régler ces problèmes là, mais avez-vous bien fait le tour de TOUS les problèmes ?",
+      "buttonText": "Suite",
+      "goTo": "sc002"
+    },
+    {
+      "id": "ec015",
+      "type": "game over",
+      "from": "10-3",
+      "imageSource": "../assets/PC-Burn.png",
+      "text": "Malheureux.se ! Vous venez d'écraser tous vos collègues de la git push force qui se battent vaillamment contre l’abominable code-erreur ! GAME OVER",
+      "buttonText": "Retour page d’accueil",
+      "goTo": "Home"
+    }
+  ]
+}

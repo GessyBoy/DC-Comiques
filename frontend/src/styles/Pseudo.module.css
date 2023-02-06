@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "MerriweatherSans-Light";
+  src: local("MerriweatherSans-Light"), url(../Fonts/MerriweatherSans-Light.ttf);
+}
+.pseudo {
+  color: #ffe8db;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #008cff;
+  box-shadow: 0 0 10px #008cff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+button {
+  color: #ffe8db;
+}

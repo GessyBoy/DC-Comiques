@@ -1,0 +1,9 @@
+.button {
+  background-color: #09f1d1;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 3px 2px 5px rgb(115, 114, 114);
+  width: 170px;
+  height: 70px;
+  cursor: pointer;
+}

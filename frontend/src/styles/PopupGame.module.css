@@ -1,0 +1,102 @@
+.all-popup-container {
+  position: relative;
+  z-index: 10;
+}
+
+.uncliquable {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: x-large;
+  line-height: 2rem;
+  top: 20px;
+  left: 9px;
+  right: 9px;
+  z-index: 51;
+  height: 203px;
+  padding: 20px;
+  background-color: rgba(0, 96, 223, 0.8);
+  border-radius: 25px;
+  font-size: 1.25rem;
+  color: rgb(215, 213, 213);
+}
+
+.exit {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(53, 49, 49);
+  margin: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+
+.pButton {
+  padding: 0px 0px;
+  border: none;
+  color: #d1b9ab;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  cursor: pointer;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+  margin-top: 0rem;
+  z-index: 100;
+  color: #d1b9ab;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.pButton:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+  border: #7b95a8 5px solid;
+}
+
+@media (min-width: 768px) {
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 4rem;
+    left: 25%;
+    right: 25%;
+    z-index: 51;
+    height: 280px;
+    width: fit-content;
+    padding: 20px;
+    background-color: rgba(0, 96, 223, 0.8);
+    border-radius: 25px;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .pButton {
+    color: rgba(255, 255, 255, 1);
+  }
+}

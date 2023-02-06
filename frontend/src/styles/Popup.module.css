@@ -1,0 +1,143 @@
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+}
+
+.overlay {
+  /* background-color:rgba(0, 0 , 0, 1); */
+  position: fixed;
+  z-index: 100;
+  background-color: #041c2e;
+  background-size: cover;
+  position: fixed;
+  background-position-x: 50%;
+  background-position-y: center;
+  width: 100%;
+  height: 100%;
+}
+
+.popupContainer {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.closeBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+  color: #d1b9ab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  color: #d1b9ab;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  padding: 1rem 1rem;
+}
+
+.btnContainer button {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 5%;
+  padding: 16px 0;
+  border: none;
+  color: #d1b9ab;
+}
+
+a {
+  width: 100%;
+  text-decoration: none;
+}
+
+span {
+  color: black;
+  font-size: large;
+  font-weight: 900;
+}
+
+.croix {
+  color: #d1b9ab;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.btnExit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  color: #d1b9ab;
+  border-radius: 15px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #008cff;
+  box-shadow: 0 0 17px #008cff;
+  border: #008cff 5px solid;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.btnExit:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+  border: #7b95a8 5px solid;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+img {
+  width: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  color: #d1b9ab;
+}
+
+@media (min-width: 768px) {
+  .btnContainer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .closeBtn {
+    position: fixed;
+    top: 50px;
+    right: 100px;
+  }
+}

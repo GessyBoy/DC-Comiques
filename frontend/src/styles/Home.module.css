@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Rocket-Rinder";
+  src: local("Rocket-Rinder"), url(../Fonts/Rocket-Rinder.otf);
+}
+@font-face {
+  font-family: "MerriweatherSans-Light";
+  src: local("MerriweatherSans-Light"), url(../Fonts/MerriweatherSans-Light.ttf);
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/home_image.png);
+  background-size: cover;
+  background-position-x: 45%;
+  background-position-y: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 16% 18% 46% 20%;
+}
+
+.logo-container {
+  position: relative;
+  grid-column: span 2 / auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 51;
+  height: 100%;
+}
+
+.logo {
+  position: absolute;
+  transform: translate(0, 1.9rem);
+  height: 105%;
+  width: auto;
+}
+
+.title-container {
+  grid-column: span 2 / auto;
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Rocket-Rinder";
+  max-width: 70ch;
+  height: 70%;
+  margin: 0;
+  padding: 4%;
+  background-color: rgb(0, 140, 255, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 220, 206);
+  text-shadow: 0 0 18px rgb(186, 186, 186);
+}
+
+.home-text {
+  font-family: "MerriweatherSans-Light";
+  grid-column: span 2 / auto;
+  background-color: rgb(0, 140, 255, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 4%;
+  margin-bottom: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.1em;
+  color: rgb(248, 220, 206);
+}
+
+.buttonsContainer {
+  grid-column: span 2 / auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-wrap {
+  margin: 4%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.button {
+  padding: 0px 15px;
+  border: none;
+  color: rgb(248, 220, 206);
+  border-radius: 7px;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  width: 100%;
+  height: 55%;
+  cursor: pointer;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+  transform: translate(0, -0.5rem);
+}
+
+.button:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+  border: #7b95a8 5px solid;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  background-color: #041c2e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30% 20% 50%;
+  }
+
+  .logo-container {
+    grid-column: span 1 / auto;
+    height: 100%;
+  }
+
+  .logo {
+    transform: translate(0, 2rem);
+    height: 90%;
+  }
+
+  .title-container {
+    margin: 2%;
+    height: 5vh;
+  }
+
+  .title {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .home-text {
+    grid-column: span 1 / auto;
+    margin-bottom: 3rem;
+    font-size: 1.15em;
+  }
+
+  .buttonsContainer {
+    grid-column: span 1 / auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    margin-left: 20%;
+    max-width: 4rem;
+    min-width: 22rem;
+  }
+
+  .button-wrap {
+    margin: 4% 0;
+    width: 45%;
+    height: 100%;
+  }
+
+  .button {
+    transform: translate(-1rem, 0);
+    height: 100%;
+    font-size: 1rem;
+  }
+
+  .button1 {
+    grid-row: span 4 / 5;
+  }
+
+  .button2 {
+    grid-row: span 5 / 6;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .home-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .home-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "MerriweatherSans-Light";
+  src: local("MerriweatherSans-Light"), url(../Fonts/MerriweatherSans-Light.ttf);
+}
+
+body {
+  height: 100vh;
+  font-family: "MerriweatherSans-Light";
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

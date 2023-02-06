@@ -1,0 +1,41 @@
+.buttonClosed {
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: floralwhite;
+  background-image: url("../assets/na8g2s5j.bmp");
+  position: absolute;
+  z-index: 101;
+}
+
+.buttonOpened {
+  animation-duration: 3s;
+  animation-name: Slide;
+  position: absolute;
+  z-index: 101;
+}
+
+@keyframes Slide {
+  from {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: floralwhite;
+    background-image: url("../assets/na8g2s5j.bmp");
+  }
+  to {
+    position: fixed;
+    top: -100%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: floralwhite;
+    background-image: url("../assets/na8g2s5j.bmp");
+  }
+}
