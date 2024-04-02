@@ -185,8 +185,23 @@ ClassicCard.propTypes = {
       goTo: PropTypes.string.isRequired,
     })
   ).isRequired,
-  dataScenarios: PropTypes.shape().isRequired,
-  dataEvents: PropTypes.shape().isRequired,
+  dataScenarios: PropTypes.arrayOf(
+    PropTypes.shape({
+      // Définissez la structure des objets dans le tableau dataScenarios
+      // Par exemple :
+      id: PropTypes.string.isRequired,
+      // Autres propriétés...
+    })
+  ).isRequired,
+
+  dataEvents: PropTypes.arrayOf(
+    PropTypes.shape({
+      // Définissez la structure des objets dans le tableau dataEvents
+      // Par exemple :
+      id: PropTypes.string.isRequired,
+      // Autres propriétés...
+    })
+  ).isRequired,
   pathApp: PropTypes.bool.isRequired,
   pathCSS: PropTypes.bool.isRequired,
   pathExpress: PropTypes.bool.isRequired,

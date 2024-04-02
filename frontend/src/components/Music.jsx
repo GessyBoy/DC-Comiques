@@ -2,32 +2,32 @@ import React, { useState, useEffect } from "react";
 import MeydnSynthwaveVibe from "../assets/MeydnSynthwaveVibe.mp3";
 
 function Music() {
-  const [setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
 
-  const Play = () => {
-    setPlay(false);
+  const handlePlay = () => {
+    setPlay(true);
   };
 
   useEffect(() => {
-    const audioVol = document.getElementById("music");
-    const volumeDown = () => {
-      audioVol.volume = 0.07;
-    };
-    return volumeDown();
-  }, []);
+    if (play) {
+      const audioVol = document.getElementById("music");
+      const volumeDown = () => {
+        audioVol.volume = 0.07;
+      };
+      volumeDown();
+    }
+  }, [play]);
 
   return (
     <div>
-      <audio
-        src={MeydnSynthwaveVibe}
-        id="music"
-        autoPlay
-        loop
-        onPlay={Play}
-        hidden
-      >
-        <track kind="captions" />{" "}
-      </audio>
+      <button type="button" onClick={handlePlay}>
+        Play Music
+      </button>
+      {play && (
+        <audio src={MeydnSynthwaveVibe} id="music" autoPlay loop hidden>
+          <track kind="captions" />
+        </audio>
+      )}
     </div>
   );
 }

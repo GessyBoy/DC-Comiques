@@ -1,3 +1,4 @@
+-- Active: 1679479812400@@127.0.0.1@3306@git_push_force
 DROP TABLE IF EXISTS `event_card`;
 
 CREATE TABLE `event_card` (

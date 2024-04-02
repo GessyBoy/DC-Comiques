@@ -7,6 +7,7 @@ import Curtain from "../components/Curtain";
 import data from "../data/homecredits.json";
 import Pseudo from "../components/Pseudo";
 import styles from "../styles/Home.module.css";
+import LogoGitPushForce from "../assets/LogoGitPushForce.png";
 
 function Home() {
   const { credits } = data;
@@ -38,11 +39,7 @@ function Home() {
       <Pseudo className="pseudo" pseudo={pseudo} setPseudo={setPseudo} />
       <main className={styles.main}>
         <div className={styles["logo-container"]}>
-          <img
-            className={styles.logo}
-            src="src/assets/LogoGitPushForce.png"
-            alt="Logo"
-          />
+          <img className={styles.logo} src={LogoGitPushForce} alt="Logo" />
         </div>
         <div className={styles["title-container"]}>
           <h1 className={styles.title}>Bienvenue dans la Git Push Force !</h1>
