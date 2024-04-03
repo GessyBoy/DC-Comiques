@@ -111,13 +111,21 @@ CrashHero.propTypes = {
   buttonText: PropTypes.string.isRequired,
   goTo: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  dataScenarios: PropTypes.shape().isRequired,
-  dataEvents: PropTypes.shape().isRequired,
+  dataScenarios: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  dataEvents: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   pathApp: PropTypes.bool.isRequired,
   setPathApp: PropTypes.func.isRequired,
   pathCSS: PropTypes.bool.isRequired,
   setPathCSS: PropTypes.func.isRequired,
-  pathExpress: PropTypes.func.isRequired,
+  pathExpress: PropTypes.bool.isRequired,
 };
 
 export default CrashHero;
