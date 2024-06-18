@@ -12,7 +12,7 @@ Ce template est conçu pour servir de base à tous les projets (P2/P3) suivants 
 
 - Sur VSCode, installer les plugins **Prettier - Code formatter** et **ESLint** et les configurer
 - Cloner ce dépôt, se rendre à l'intérieur
-- Lancer la commande `npm run setup`
+- Lancer la commande `pnpm run setup`
 - _NB: Pour exécuter le backend, un fichier d'environnement avec les données de connexion d'une BdD valide est nécesaire. Un modèle se trouve dans `backend/.env.sample`_
 
 ### Liste des commandes et signification
@@ -38,16 +38,9 @@ Ce template est conçu pour servir de base à tous les projets (P2/P3) suivants 
 
 ### Reste à faire
 
-Prettier:
 
-- corriger la config front/back pour qu'elle suive le même standard qu'ESLint
 
 Testing:
 
 - ajouter des tests unitaires sur le front et le back, avec les commandes associées
 
-Vérifications:
-
-- s'assurer que les principaux outils utilisés lors de la formation sont compatibles avec ce template
-- deploiements ? Compatible avec Netlify/Vercel/Heroku ?
-- fonctionnement avec yarn/pnpm

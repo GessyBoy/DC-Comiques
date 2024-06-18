@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "npm i && husky install && npm --prefix ./frontend i && npm --prefix ./backend i",
+    "setup": "pnpm i && husky install && pnpm --prefix ./frontend i && pnpm --prefix ./backend i",
     "migrate": "cd backend/ && node migrate.js && cd ..",
-    "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./frontend run dev\" \"npm --prefix ./backend run dev\"",
-    "dev-front": "npm --prefix ./frontend run dev",
-    "dev-back": "npm --prefix ./backend run dev",
-    "lint": "npm --prefix ./frontend run lint && npm --prefix ./backend run lint",
-    "fix": "npm --prefix ./frontend run fix && npm --prefix ./backend run fix"
+    "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"pnpm --prefix ./frontend run dev\" \"pnpm --prefix ./backend run dev\"",
+    "dev-front": "pnpm --prefix ./frontend run dev",
+    "dev-back": "pnpm --prefix ./backend run dev",
+    "lint": "pnpm --prefix ./frontend run lint && pnpm --prefix ./backend run lint",
+    "fix": "pnpm --prefix ./frontend run fix && pnpm --prefix ./backend run fix"
   },
   "keywords": [],
   "author": "Wild Code School",
