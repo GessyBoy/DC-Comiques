@@ -7,7 +7,7 @@ This repository is a simple Express MVC structure from scratch.
 ## Steps
 
 1. Clone the repo from Github.
-2. Run `npm install` or `yarn install`.
+2. Run `npm install` or `pnpm install`.
 3. Create _.env_ from _.env.sample_ file and add your DB parameters. Don't delete the _.sample_ file, it must be kept.
 
 ```
