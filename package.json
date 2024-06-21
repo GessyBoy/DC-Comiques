@@ -10,7 +10,8 @@
     "dev-front": "pnpm --prefix ./frontend run dev",
     "dev-back": "pnpm --prefix ./backend run dev",
     "lint": "pnpm --prefix ./frontend run lint && pnpm --prefix ./backend run lint",
-    "fix": "pnpm --prefix ./frontend run fix && pnpm --prefix ./backend run fix"
+    "fix": "pnpm --prefix ./frontend run fix && pnpm --prefix ./backend run fix",
+    "vercel-build": "pnpm run migrate && pnpm run setup && pnpm run dev"
   },
   "keywords": [],
   "author": "Wild Code School",
