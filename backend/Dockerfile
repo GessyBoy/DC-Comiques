@@ -16,6 +16,6 @@ ENV DB_NAME=${DB_NAME}
 
 COPY ./backend .
 
-RUN npm install
+RUN pnpm install
 
-CMD [ "npm", "start" ]
+CMD [ "pnpm", "start" ]
