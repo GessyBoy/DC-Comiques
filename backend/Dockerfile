@@ -14,7 +14,7 @@ ENV DB_PASSWORD=${DB_PASSWORD}
 ARG DB_NAME=${DB_NAME}
 ENV DB_NAME=${DB_NAME}
 
-COPY ..
+COPY . .
 
 RUN npm install -g pnpm && \
     pnpm install
