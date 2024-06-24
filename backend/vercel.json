@@ -1,11 +1,7 @@
 {
     "version": 2,
     "routes": [
-      { "src": "/api/app.js", "dest": "/src/app.js" },
-      { "src": "/api/controllers/(.*)", "dest": "/src/controllers/$1" },
-      { "src": "/api/models/(.*)", "dest": "/src/models/$1" },
-      { "src": "/api/services/(.*)", "dest": "/src/services/$1" },
-      { "src": "/api/(.*)", "dest": "/src/$1" },
-      { "src": "/(.*)", "dest": "/$1" }
+      { "src": "app.js", "dest": "/src/app.js" },
+      { "src": "index.js(.*)", "dest": "/" }
     ]
   }
