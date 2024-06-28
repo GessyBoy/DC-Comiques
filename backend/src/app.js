@@ -34,7 +34,8 @@ const reactIndexFile = path.join(
   "..",
   "frontend",
   "dist",
-  "index.html"
+  "index.html",
+  "style.css"
 );
 
 if (fs.existsSync(reactIndexFile)) {
