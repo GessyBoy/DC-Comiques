@@ -7,6 +7,11 @@
         "dest": "/index.js"
       },
       {
+        "src": "./public/assets/css/style.css",
+        "headers": { "Content-Type": "text/css" },
+        "dest": "/public/assets/css/style.css"
+      },
+      {
         "src": "/(.*)",
         "dest": "/index.html"
       }
